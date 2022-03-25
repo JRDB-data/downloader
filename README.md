@@ -14,6 +14,12 @@
 
 ## 初期設定
 
+### リポジトリのクローン
+
+``` sh
+git clone git@github.com:JRDB-data/downloader.git
+```
+
 ### 環境設定
 
 環境変数の管理に `direnv` を使用しています。
@@ -50,6 +56,12 @@ OUTPUT_DIRECTORY=${HOME}/dev/JRDB-data/files/downloaded_files/
                 │   └── bac220319.txt <== JRDB からダウンロードされたファイル
                 └── Ks
                     └── kza220319.txt <== JRDB からダウンロードされたファイル
+```
+
+以下のコマンドで環境変数をロードします。
+
+```sh
+direnv allow .
 ```
 
 ## スクリプトの使用方法
