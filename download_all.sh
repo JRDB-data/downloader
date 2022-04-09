@@ -12,7 +12,7 @@ read FILEDATE
 
 for FILETYPE in "${FILETYPES[@]}"
 do
-sh ./downloader.sh << EOS
+sh $(dirname $0)/downloader.sh << EOS
 ${FILETYPE}
 ${FILEDATE}
 EOS
