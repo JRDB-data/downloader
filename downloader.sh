@@ -18,19 +18,19 @@ file_exists() {
 }
 
 download() {
-  curl -u ${JRDB_USER}:${JRDB_PASSWORD} ${JRDB_BASE_URL}$(filepath) -L -o ${OUTPUT_DIRECTORY}$(filepath)
+  curl -u ${JRDB_USER}:${JRDB_PASSWORD} ${JRDB_BASE_URL}$(filepath) -L -o ${DOWNLOAD_FILE_OUTPUT_DIRECTORY}$(filepath)
 }
 
 decompression() {
-  lha -xw=${OUTPUT_DIRECTORY}${FILETYPE} ${OUTPUT_DIRECTORY}$(filepath)
+  lha -xw=${DOWNLOAD_FILE_OUTPUT_DIRECTORY}${FILETYPE} ${DOWNLOAD_FILE_OUTPUT_DIRECTORY}$(filepath)
 }
 
 pre_process() {
-  mkdir -p ${OUTPUT_DIRECTORY}${FILETYPE}
+  mkdir -p ${DOWNLOAD_FILE_OUTPUT_DIRECTORY}${FILETYPE}
 }
 
 post_process() {
-  rm -f ${OUTPUT_DIRECTORY}$(filepath)
+  rm -f ${DOWNLOAD_FILE_OUTPUT_DIRECTORY}$(filepath)
 }
 
 main() {

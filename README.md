@@ -41,10 +41,10 @@ soruce ~/.zshrc
 ```.env
 JRDB_USER=XXXXXXXX
 JRDB_PASSWORD=XXXXXXXX
-OUTPUT_DIRECTORY=${HOME}/dev/JRDB-data/files/downloaded_files/
+DOWNLOAD_FILE_OUTPUT_DIRECTORY=${HOME}/dev/JRDB-data/files/downloaded_files/
 ```
 
-`OUTPUT_DIRECTORY` にはダウンロードファイルの出力先をご指定ください。上記の例のように入力した場合、以下のような形でダウンロードされたファイルが作成されます。
+`DOWNLOAD_FILE_OUTPUT_DIRECTORY` にはダウンロードファイルの出力先をご指定ください。上記の例のように入力した場合、以下のような形でダウンロードされたファイルが作成されます。
 
 ```
 ~/
