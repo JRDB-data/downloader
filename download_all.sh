@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILETYPES=("Ks" "Bac" "Kta" "Ukc" "Kyi")
+FILETYPES=("Ks" "Kab" "Bac" "Kta" "Ukc" "Kyi" "Sed")
 
 cat <<EOS
 
